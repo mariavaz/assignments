@@ -1,0 +1,180 @@
+/*
+Project Name: Maria Vazquez Web Developer
+Author: Maria Vazquez
+Developed @ GA
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 BASE STYLES 
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear Class */
+.clear {
+	clear: both;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.alignright {
+	float: right;
+}
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+body {
+  line-height: 2.0;
+  color: black;
+  font-family: 'Domine', serif;
+  font-size: 14px;
+  background: color #f6f6f6;
+}
+
+h1 {
+	font-size: 45px;
+	margin-bottom: -20px;
+  margin-top: -20px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+  text-align: center;
+  color: #b76679;
+}
+
+p{
+  color: #000000;
+  letter-spacing: 0.0610em;
+}
+
+h2 {
+	font-size: 18px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: -20px;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  color: #d7ccae;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 26px;
+  font-family: 'Lato', sans-serif;
+  color: #d7ccae;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: -5px;
+  font-family: 'Lato', sans-serif;
+  color: #b76679;
+}
+
+a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.italica {
+    color: #d7ccae;
+    font-style: italic;
+    text-decoration: none;
+}
+
+img {
+	padding: 3px;
+	border:1px solid black;
+	margin-top: 20px;
+}
+
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+
+#container {
+	width: 1000px;
+	margin: 0 auto 0 auto;
+  border-top: 5px solid #d7ccae;
+  border-bottom: 5px solid #d7ccae;
+  margin-top: 20px;
+}
+
+#header {
+  padding: 50px;
+	border-bottom: 1px solid black;
+}
+
+#header ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#header ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+#header li:not(:first-child):before {
+    content: " | ";
+}
+
+#main {
+	border-bottom: 1px solid #000000;
+	padding: 50px;
+	width: 700px;
+	float: left;
+}
+
+#sidebar {
+	width: 300px;
+	float: left;
+	padding: 20px;
+}
+
+/*----------------------------------------------------------------------------- 
+04=FOOTER
+-----------------------------------------------------------------------------*/
+
+#footer {
+	padding: 20px;
+	font-size: 18px;
+  	font-family: 'Lato', sans-serif;
+  	font-weight: bold;
+  	text-align: center;
+}
+
+#footer ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#footer ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+#footer li:not(:first-child):before {
+    content: " | ";
+}
