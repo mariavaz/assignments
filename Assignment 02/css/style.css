@@ -1,0 +1,203 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Maria Vazquez
+Developer @GA in Denver
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background-color: #033048;
+    font-size: 13px;
+    line-height: 1.4;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+p{
+  margin: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 980px;
+  background-color: #606161;
+  margin: auto;
+}
+
+
+header {
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  height: 500px;
+  padding-top: 32px;
+}
+
+header .site_name{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  margin-left: 45px;
+}
+
+header h2{
+  margin-top: 120px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+
+h3{
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #033048;
+  margin-bottom: 20px;
+}
+
+.button{
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 180px;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.yellow{
+  background: #f9e42e;
+  color: #033048;
+  margin-top: 50px;
+}
+
+.blue{
+  background: #033048;
+  color: #fff;
+  font-size: 16px;
+}
+#benefits{
+  background-color: #f0efef;
+  padding-left: 45px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 13px;
+}
+
+#benefits p{
+  width: 400px;
+}
+
+#benefits ul {
+  width: 250px;
+}
+
+.benefits_list{
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+#quotes{
+   background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+   height: 250px;
+   color: #fff;
+   padding-top: 35px;
+   line-height: 1.5;
+}
+
+blockquote{
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  width: 380px;
+  margin: 0 auto;
+  padding: 40px 0 0px;
+}
+
+blockquote span{
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
+#signup_now{
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  height: 250px;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 25px;
+  margin-top: 30px;
+}
+
+h4{
+  color: #f9e42e;
+  font-weight: 800;
+  margin: 0;
+  padding-top: 30px;
+  font-size: 24px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+

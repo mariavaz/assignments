@@ -1,0 +1,251 @@
+/*
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Maria Vazquez
+Developer @GA in Denver
+*/
+
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/*----------------------------------------------------------------------------- 
+02=LAYOUT  
+-----------------------------------------------------------------------------*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+  background-color: #f0efef;
+}
+
+h1{
+	margin: 0;
+}
+
+header{
+	padding: 30px;
+	background-color: #033048;
+  overflow: auto;
+
+}
+
+header h1{
+  color: white;
+  float: left;
+  font-weight: 800;
+  margin-left: 150px;
+}
+
+nav{
+  float: right;
+  padding-right: 50px;
+  width: 500px;
+}
+
+nav ul li a{
+  color: #f9e42e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li{
+  display: inline;
+  padding-left: 20px;
+}
+
+nav ul li a:hover{
+  font-weight: 800;
+}
+
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+
+#container {
+  min-width: 780px;
+  margin: auto;
+  width: 960px;
+}
+
+#main {
+  width: 700px;
+  margin-right: 10px;
+  float: left;
+}
+
+#post{
+  border-bottom: 1px solid #033048;
+  margin-bottom: 20px;
+}
+
+h3{
+  color:#033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+p{
+  color: #121212;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+span {
+    float: left;
+    width: 0.8em;
+    font-size: 300%;
+    line-height: 100%;
+    color: #606161;
+    font-weight: 600;
+}
+
+.read-more{
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: #033048;
+}
+
+a:hover{
+  font-weight: 800;
+}
+
+/*----------------------------------------------------------------------------- 
+04=SIDEBAR
+-----------------------------------------------------------------------------*/
+
+#sidebar {
+  width: 240px;
+  margin-left: 10px;
+  float: right;
+  padding: 20px;
+}
+
+img{
+  margin-top: 20px;
+}
+
+h2{
+  color: #033048;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.about{
+  font-size: 22px;
+  color: #033048;
+}
+
+.learn-more{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#sidebar ul li a{
+  font-size: 24px;
+}
+
+#sidebar ul li{
+  padding-bottom: 10px;
+}
+
+#sidebar ul li a:hover{
+  font-weight: 800;
+}
+
+/*----------------------------------------------------------------------------- 
+05=SIGN_UP
+-----------------------------------------------------------------------------*/
+
+#signup_now{
+  background: #f9e42e;
+  padding: 30px;
+  text-align: center;
+}
+
+.button{
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 180px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.blue{
+  background: #033048;
+  color: #fff;
+  font-size: 12px;
+}
+
+/*----------------------------------------------------------------------------- 
+06=FOOTER
+-----------------------------------------------------------------------------*/
+
+footer {
+  height: 250px;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 25px;
+  margin-top: 30px;
+}
+
+h4{
+  color: #f9e42e;
+  font-weight: 800;
+  margin: 0;
+  padding-top: 30px;
+  font-size: 24px;
+}
