@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Personal Portfolio of Andrew Preston Photographer.">
+	<meta name="author" content="Maria Vazquez">
+	
+	<title>Andrew Preston Photographer</title>
+	
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type='text/css'>
+	
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- external JS link -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header id="page-header">
+		<div class="wrapper">
+			<h1><a href="index.html">Andrew Preston Photographer</a></h1>
+			<div class= "hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#codeabout">About</a></li>
+					<li><a href="#codework">Work</a></li>			
+					<li><a href="blog.html">Blog</a></li>			
+					<li><a href="#codefooter">Contact</a></li>			
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- BANNER -->
+	<section class="banner">
+		<div class="wrapper">
+			<div class="blurb">
+				<h2>Where does your mind want to travel?</h2>
+				<form>
+				<select id="country">
+				<option>Select a country</option>
+			</select>
+			</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- ABOUT -->
+	<A NAME="codeabout">
+	<div class="wrapper">
+		<section class="aboutme">
+			<section class="text">
+				<header>
+				<h3>About</h3>
+				</header>
+				<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo sapien odio, id vulputate quam varius vel. Phasellus quis lectus a ex vulputate placerat a at orci. Nulla in elit imperdiet, fermentum elit sed, condimentum ligula. Nulla vehicula velit dolor, sed scelerisque arcu rutrum eu. Curabitur et semper felis, in fermentum erat. <br><br>Phasellus porta ante vitae est venenatis commodo. Vestibulum accumsan mauris lectus. Etiam id ligula non mauris lobortis faucibus a et risus. Aliquam pulvinar fringilla nisi et iaculis. Donec egestas varius dignissim. Donec accumsan enim enim, in consequat ipsum placerat commodo. Curabitur volutpat tellus eleifend tempor tempus. Fusce at malesuada ligula.</p><br>
+				<ul>
+    			<li><a href = "https://www.flickr.com/photos/109153195@N06" target="_blank">Flickr</a></li>
+    			<li><a href = "https://www.instagram.com/andypres10/" target="_blank">Instagram</a></li>
+    			<li><a href = "https://twitter.com/itsoundsmadeup" target="_blank">Twitter</a></li>
+				</ul>
+			</section>
+
+			<section class="photo">
+				<img src="images/andrew.jpg" alt="andrew" class="alignright" style="width: 350px; height: 350px;">
+			</section>
+		</section>
+	</div>
+
+	<!-- WORK -->
+
+	<A NAME="codework">
+
+	<section id="#work">
+	<p class="section-title">Work</p>
+
+		<div id="imagelist">
+			<a href="images/people.jpg"><img src="images/people.jpg" alt="people" href="#"></a>
+			<a href="images/events.jpg"><img src="images/events.jpg" alt="events" href="#"></a>
+			<a href="images/outdoor.jpg"><img src="images/outdoor.jpg" alt="outdoor" href="#"></a>
+			<a href="images/asia.jpg"><img src="images/asia.jpg" alt="asia" href="#"></a>
+			<a href="images/north.jpg"><img src="images/north.jpg" alt="north" href="#"></a>
+			<a href="images/south.jpg"><img src="images/south.jpg" alt="south" href="#"></a>
+		</div>
+						
+	</section>
+
+	<!-- CONTACT -->
+	<p class="section-title">Contact</p>
+
+	<div class="wrapper">
+		<section class="contact-me">
+			<section class="contact-text">
+				<header>
+				<h3>Get in touch</h3>
+				</header>
+				<p>Vestibulum accumsan mauris lectus. Etiam id ligula non mauris lobortis faucibus a et risus. Aliquam pulvinar fringilla nisi et iaculis. Donec egestas varius dignissim. Donec accumsan enim enim, in consequat ipsum placerat commodo. Curabitur volutpat tellus eleifend tempor tempus. Fusce at malesuada ligula.</p>
+			</section>
+
+		<section class="contact-area">
+				<form method="post" action="contactengine.php">
+					<label for="Name">Name</label>
+					<input type="text" name="Name" id="Name" />
+		
+					<label for="Email">Email</label>
+					<input type="text" name="Email" id="Email" />
+					
+					<label for="Message">Message</label><br />
+					<textarea name="Message" rows="10" cols="70" id="Message"></textarea>
+
+					<input type="submit" name="submit" value="Submit" class="submit-button" />
+				</form>
+		</section>
+		
+		</section>
+	</div>
+
+	<div class="clear"></div>
+
+	<!-- FOOTER -->
+	
+	<A NAME="codefooter">
+
+	<footer>
+		<div class="wrapper">
+			<h4>Andrew Preston © 2017. All Rights Reserved.</h4>
+			<ul>
+				<li><a href="#"><img src="images/twitter-logo.png" alt="Twitter logo"></a></li>
+				<li><a href="#"><img src="images/twitter-logo.png" alt="Instagram logo"></a></li>
+				<li><a href="#"><img src="images/twitter-logo.png" alt="Flickr logo"></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+/*
+Project Name: Andrew Preston Photographer
+Author: Maria Vazquez
+Developed @ GA
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 BASE STYLES 
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear Class */
+.clear {
+	clear: both;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.alignright {
+	float: right;
+}
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	cursor: default;
+}
+
+.wrapper {
+	max-width: 1280px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+h3 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #27304d;
+}
+
+h4 {
+	font-size: 14px;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+.section-title {
+	text-transform: uppercase;
+	background-color: #27304d;
+	text-align: center;
+	font-size: 26px;
+	color: white;
+}
+
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+
+#page-header {
+	background: #27304d;
+	color: white;
+	overflow: hidden;
+	padding: 0 3%;
+}
+#page-header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#page-header a:hover {
+	color: #779cab;
+}
+
+#page-header h1 {
+	float: left;
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.5em;
+	margin: 20px 0 0 0;
+	text-transform: uppercase;
+}
+#page-header nav {
+	float: right;
+}
+#page-header nav li {
+	float: left;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+#page-header nav a {
+	display: block;
+	padding: 20px 15px;
+}
+#page-header nav li a:hover {
+	color: #779cab;
+}
+#page-header nav li.active a {
+	background: #666;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+04=BANNER  
+-----------------------------------------------------------------------------*/
+
+.banner {
+	background: url(../images/phbanner.jpg) center center no-repeat;
+	background-size: cover;
+	height: 600px;
+	overflow: hidden;
+	padding: 3%;
+}
+
+.blurb {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10%;
+	float: center;
+	color: white;
+	font-size: 25px;
+}
+
+input[type=text], select {
+    width: 87%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    float: center;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+05=ABOUT  
+-----------------------------------------------------------------------------*/
+
+.aboutme {
+	background: #F1F1F1;
+	overflow: hidden;
+	padding: 2% 0;
+}
+
+.text {
+	float: left;
+	width: 60%;
+	padding: 2% 3%;
+}
+
+.text a {
+	text-decoration: none;
+	color: #27304d;
+}
+
+.text ul li {
+	display: inline;
+	padding: 5px;
+}
+
+.text a:hover {
+	color: #779cab;
+}
+
+
+.photo {
+	float: right;
+	width: 40%;
+	padding: 2% 3%;
+}
+
+
+/*----------------------------------------------------------------------------- 
+06=WORK
+-----------------------------------------------------------------------------*/
+
+#imagelist{
+	font-size: 0;
+	width: 1280px;
+	margin: 0 auto;
+	background-color: #0e1b29;
+	float: center;
+}
+
+#imagelist a {
+	margin: 20px;
+	display: inline-block;
+	opacity: .5;
+	float: center;
+
+	transition: all .3s ease-in;
+}
+
+#imagelist a:hover {
+	opacity: 1;
+}
+
+/*----------------------------------------------------------------------------- 
+07=CONTACT  
+-----------------------------------------------------------------------------*/
+
+.contact-me {
+	background: #F1F1F1;
+	overflow: hidden;
+	padding: 2% 0;
+}
+
+.contact-text {
+	float: left;
+	width: 60%;
+	padding: 2% 3%;
+}
+
+.contact-area {
+	float: right;
+	width: 40%;
+	padding: 2% 3%;
+
+}
+
+/*----------------------------------------------------------------------------- 
+08=FOOTER  
+-----------------------------------------------------------------------------*/
+
+footer {
+	background: #27304d;
+	color: white;
+	padding: 2% 3%;
+	display: block;
+	overflow: auto;
+	height: 80px;
+}
+
+footer ul {
+	float: right;
+}
+
+footer ul li {
+	list-style-type: none;
+	display: inline;
+	padding: 30px 10px;
+}
+
+input[type=Message], select {
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    float: center;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #27304d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #779cab;
+}
+
+
+/* START boilerplate css for hamburger */
+.hamburger{
+	position: absolute;
+	top: 0.3em;
+	right: 0.5em;
+}
+.hamburger .line{
+	width: 3em;
+	height: 0.3em;
+	background: yellow;
+	border-radius: 1em;
+	margin-top: 0.25em;
+}
+.hamburger .line:first-of-type{
+	margin-top: 0.7em;
+}
+/* END boilerplate css for hamburger */
+
+@media screen
+and (max-width: 768px){
+  .hamburger{
+  	display: block;
+  }
+
+  nav {
+    display: none;
+  }
+  
+  nav a {
+    display: inline-block;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+}
+
+@media screen
+and (min-width: 768px){
+  .hamburger{
+  	display: none;
+  }
+  .big_menu_item{
+  	display: inline;
+  }
+  .blurbmobile{
+  	display: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+	#page-header h1{
+		font-size: 2.5em;
+	}
+	.banner{
+		background-size: 100%;
+		padding: 0%;
+	}
+	.blurb{
+		display: none;
+	}
+	.tout{
+		width: 90%;
+		box-shadow: none;
+	}
+	.blurbmobile{
+		padding: 2%;
+		width: 60%;
+	}
+
+}
