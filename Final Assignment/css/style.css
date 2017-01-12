@@ -34,7 +34,7 @@ Developed @ GA
 -----------------------------------------------------------------------------*/
 
 body {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Merriweather', serif;
 	font-size: 16px;
 	line-height: 1.5;
 	cursor: default;
@@ -42,7 +42,17 @@ body {
 
 .wrapper {
 	max-width: 1280px;
-	margin: auto;
+	margin: 0 auto;
+}
+
+.wrapper-two{
+	width: 100%;
+	background-color: black;
+}
+
+
+p{
+	color: black;
 }
 
 h1 {
@@ -54,10 +64,10 @@ h2 {
 	font-weight: bold;
 }
 h3 {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 28px;
 	text-transform: uppercase;
-	color: #27304d;
+	color: #779cab;
 }
 
 h4 {
@@ -67,14 +77,21 @@ h4 {
 
 a {
 	text-decoration: none;
+	color: #779cab;
+}
+
+a:hover{
+	color: black;
 }
 
 .section-title {
 	text-transform: uppercase;
-	background-color: #27304d;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: black;
 	text-align: center;
-	font-size: 26px;
+	font-size: 20px;
 	color: white;
+	padding: 10px;
 }
 
 /*----------------------------------------------------------------------------- 
@@ -82,10 +99,11 @@ a {
 -----------------------------------------------------------------------------*/
 
 #page-header {
-	background: #27304d;
-	color: white;
+	background: white;
+	color: #779cab;
 	overflow: hidden;
 	padding: 0 3%;
+	height: 150px;
 }
 #page-header a {
 	color: inherit;
@@ -98,12 +116,14 @@ a {
 
 #page-header h1 {
 	float: left;
-	color: white;
-	font-family: 'Rubik', sans-serif;
-	font-size: 1.5em;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3em;
 	margin: 20px 0 0 0;
 	text-transform: uppercase;
+	padding: 35px;
 }
+
 #page-header nav {
 	float: right;
 }
@@ -117,7 +137,7 @@ a {
 	padding: 20px 15px;
 }
 #page-header nav li a:hover {
-	color: #779cab;
+	color: black;
 }
 #page-header nav li.active a {
 	background: #666;
@@ -143,20 +163,58 @@ a {
 	padding: 10%;
 	float: center;
 	color: white;
-	font-size: 25px;
+	font-size: 18px;
+	text-align: center;
 }
 
-input[type=text], select {
-    width: 87%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+/* Dropdown Button */
+.dropbtn {
+    background-color: #292929;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
     font-size: 16px;
-    float: center;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
 }
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #779cab;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #292929;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 
 
@@ -165,7 +223,7 @@ input[type=text], select {
 -----------------------------------------------------------------------------*/
 
 .aboutme {
-	background: #F1F1F1;
+	background: white;
 	overflow: hidden;
 	padding: 2% 0;
 }
@@ -178,16 +236,20 @@ input[type=text], select {
 
 .text a {
 	text-decoration: none;
-	color: #27304d;
+	color: #292929;
+}
+
+.text ul li a{
+	color: #779cab;
 }
 
 .text ul li {
 	display: inline;
-	padding: 5px;
+	margin-right: 10px;
 }
 
-.text a:hover {
-	color: #779cab;
+.text ul li a:hover {
+	color: black;
 }
 
 
@@ -204,14 +266,11 @@ input[type=text], select {
 
 #imagelist{
 	font-size: 0;
-	width: 1280px;
 	margin: 0 auto;
-	background-color: #0e1b29;
-	float: center;
+	background-color: #000000;
 }
 
 #imagelist a {
-	margin: 20px;
 	display: inline-block;
 	opacity: .5;
 	float: center;
@@ -223,40 +282,87 @@ input[type=text], select {
 	opacity: 1;
 }
 
+.work{
+	margin-top: 50px;
+}
+
+
 /*----------------------------------------------------------------------------- 
 07=CONTACT  
 -----------------------------------------------------------------------------*/
 
 .contact-me {
-	background: #F1F1F1;
 	overflow: hidden;
 	padding: 2% 0;
 }
 
 .contact-text {
 	float: left;
-	width: 60%;
+	width: 50%;
 	padding: 2% 3%;
 }
 
 .contact-area {
 	float: right;
-	width: 40%;
+	width: 50%;
 	padding: 2% 3%;
 
 }
+
+input[type=text], select {
+    width: 85%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea{
+    width: 85%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    margin-right: 15%;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #779cab;
+}
+
 
 /*----------------------------------------------------------------------------- 
 08=FOOTER  
 -----------------------------------------------------------------------------*/
 
 footer {
-	background: #27304d;
-	color: white;
+	background: #000000;
+	color: #779cab;
 	padding: 2% 3%;
 	display: block;
 	overflow: auto;
-	height: 80px;
+	height: 200px;
+	background: url(../images/footer.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 footer ul {
@@ -269,31 +375,69 @@ footer ul li {
 	padding: 30px 10px;
 }
 
-input[type=Message], select {
-    width: 85%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 18px;
-    float: center;
+
+footer ul li:hover {
+	opacity: .5;
+	transition: all .3s ease-in;
 }
 
-input[type=submit] {
-    width: 100%;
-    background-color: #27304d;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/*----------------------------------------------------------------------------- 
+RETURN TO TOP  
+-----------------------------------------------------------------------------*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #779cab url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
 }
 
-input[type=submit]:hover {
-    background-color: #779cab;
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
 }
 
 
