@@ -1,0 +1,574 @@
+/*
+Project Name: Andrew Preston Photographer
+Author: Maria Vazquez
+Developed @ GA
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 BASE STYLES 
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear Class */
+.clear {
+	clear: both;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.alignright {
+	float: right;
+}
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+body {
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	line-height: 1.5;
+	cursor: default;
+}
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.wrapper-two{
+	width: 100%;
+	background-color: #292929;
+}
+
+
+p{
+	color: black;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #779cab;
+}
+
+h4 {
+	font-size: 14px;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	color: #779cab;
+}
+
+a:hover{
+	color: black;
+}
+
+.section-title {
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: black;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+}
+
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+
+#page-header {
+	background: white;
+	color: #779cab;
+	overflow: hidden;
+	padding: 0 3%;
+	height: 110px;
+}
+#page-header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#page-header h1 {
+	float: left;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2em;
+	margin: 20px 0 0 0;
+	text-transform: uppercase;
+	padding: 5px;
+	border: 2px solid black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+#page-header nav {
+	float: right;
+}
+#page-header nav li {
+	float: left;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+#page-header nav a {
+	display: block;
+	padding: 20px 15px;
+}
+#page-header nav li a:hover {
+	color: black;
+}
+#page-header nav li.active a {
+	background: #666;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+04=BANNER  
+-----------------------------------------------------------------------------*/
+
+.banner {
+	background: url(../images/phbanner.jpg) center center no-repeat;
+	background-size: cover;
+	height: 700px;
+	overflow: hidden;
+	padding: 3%;
+}
+
+
+#country-type {
+  color: white;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.3);
+  border: 2px solid white;
+  padding: 0px 30px;
+  display: inline-block;
+  width: 300px;
+  margin-right: 24px;
+  height: 50px;
+  line-height: 74px;
+  vertical-align: middle;
+}
+
+select{
+	background-color:red;
+}
+
+
+/******************************************
+/* SWITCHER BACKGROUND STYLES
+/*******************************************/
+
+.argen {
+  background: url(../images/argen.jpg) center center no-repeat;
+  background-size: cover;
+	height: 700px;
+	overflow: hidden;
+	padding: 3%;
+}
+
+.indi {
+  background: url(../images/indi.jpg) center center no-repeat;
+  background-size: cover;
+	height: 700px;
+	overflow: hidden;
+	padding: 3%;
+}
+
+.nep {
+  background: url(../images/nep.jpg) center center no-repeat;
+  background-size: cover;
+	height: 700px;
+	overflow: hidden;
+	padding: 3%;
+}
+
+.egyp {
+  background: url(../images/egyp.jpg) center center no-repeat;
+  background-size: cover;
+	height: 700px;
+	overflow: hidden;
+	padding: 3%;
+}
+
+
+.blurb {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10%;
+	float: center;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    min-width: 300px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(0,0,0,0.6)}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+/*----------------------------------------------------------------------------- 
+05=ABOUT  
+-----------------------------------------------------------------------------*/
+
+.aboutme {
+	background: #292929;
+	overflow: hidden;
+	padding: 2% 0;
+}
+
+.text {
+	float: left;
+	width: 60%;
+	padding: 2% 3%;
+}
+
+.about-text{
+	color:white;
+}
+
+.text a {
+	text-decoration: none;
+	color: #292929;
+}
+
+.text ul li a{
+	color: #779cab;
+}
+
+.text ul li {
+	display: inline;
+	margin-right: 10px;
+}
+
+.text ul li a:hover {
+	color: black;
+}
+
+
+.photo {
+	float: right;
+	width: 40%;
+	padding: 2% 3%;
+}
+
+
+/*----------------------------------------------------------------------------- 
+06=WORK
+-----------------------------------------------------------------------------*/
+
+#imagelist{
+	font-size: 0;
+	margin: 0 auto;
+	background-color: #000000;
+}
+
+#imagelist a {
+	display: inline-block;
+	opacity: .5;
+	float: center;
+
+	transition: all .3s ease-in;
+}
+
+#imagelist a:hover {
+	opacity: 1;
+}
+
+.work{
+	margin-top: 50px;
+}
+
+
+/*----------------------------------------------------------------------------- 
+07=CONTACT  
+-----------------------------------------------------------------------------*/
+
+.contact-me {
+	overflow: hidden;
+	padding: 2% 0;
+}
+
+.contact-text {
+	float: left;
+	width: 50%;
+	padding: 2% 3%;
+}
+
+.contact-area {
+	float: right;
+	width: 50%;
+	padding: 2% 3%;
+
+}
+
+input[type=text], select {
+    width: 85%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea{
+    width: 85%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    margin-right: 15%;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #779cab;
+}
+
+
+/*----------------------------------------------------------------------------- 
+08=FOOTER  
+-----------------------------------------------------------------------------*/
+
+footer {
+	background: #000000;
+	color: #779cab;
+	padding: 2% 3%;
+	display: block;
+	overflow: auto;
+	height: 200px;
+	background: url(../images/footer.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+footer ul {
+	float: right;
+}
+
+footer ul li {
+	list-style-type: none;
+	display: inline;
+	padding: 30px 10px;
+}
+
+
+footer ul li:hover {
+	opacity: .5;
+	transition: all .3s ease-in;
+}
+
+/*----------------------------------------------------------------------------- 
+RETURN TO TOP  
+-----------------------------------------------------------------------------*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #779cab url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+/* START boilerplate css for hamburger */
+.hamburger{
+	position: absolute;
+	top: 0.3em;
+	right: 0.5em;
+}
+.hamburger .line{
+	width: 3em;
+	height: 0.3em;
+	background: yellow;
+	border-radius: 1em;
+	margin-top: 0.25em;
+}
+.hamburger .line:first-of-type{
+	margin-top: 0.7em;
+}
+/* END boilerplate css for hamburger */
+
+@media screen
+and (max-width: 768px){
+  .hamburger{
+  	display: block;
+  }
+
+  nav {
+    display: none;
+  }
+  
+  nav a {
+    display: inline-block;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+}
+
+@media screen
+and (min-width: 768px){
+  .hamburger{
+  	display: none;
+  }
+  .big_menu_item{
+  	display: inline;
+  }
+  .blurbmobile{
+  	display: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+	#page-header h1{
+		font-size: 2.5em;
+	}
+	.banner{
+		background-size: 100%;
+		padding: 0%;
+	}
+	.blurb{
+		display: none;
+	}
+	.tout{
+		width: 90%;
+		box-shadow: none;
+	}
+	.blurbmobile{
+		padding: 2%;
+		width: 60%;
+	}
+
+}
