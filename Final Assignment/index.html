@@ -18,6 +18,7 @@
 	
 	<!-- external JS link -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 </head>
 <body>
@@ -34,7 +35,7 @@
 			<nav>
 				<ul>
 					<li><a id="about" href="#codeabout">About</a></li>
-					<li><a id="work" href="#codework">Work</a></li>			
+					<li><a id="work" href="#codework">Lightbox</a></li>			
 					<li><a href="https://www.instagram.com/andypres10/" target="_blank">Journal</a></li>		
 					<li><a id="contact" href="#codefooter">Contact</a></li>			
 				</ul>
@@ -43,18 +44,18 @@
 	</header>
 
 	<!-- BANNER -->
-	<section class="banner">
+	<section id="banner" class="banner">
 		<div class="wrapper">
 			<div class="blurb">
 				<h2>Where does your mind want to travel?</h2>
 				
 				<div class="dropdown">
-				<button onclick="myFunction()" class="dropbtn">Select a destination</button>
+				<button class="dropbtn">Select a destination</button>
 				<div id="myDropdown" class="dropdown-content">
-    			<a href="#" target="_blank">Argentina</a>
-			    <a href="#" target="_blank">India</a>
-			    <a href="#" target="_blank">Nepal</a>
-			    <a href="#" target="_blank">Egypt</a>
+    			<a id="egypt">Egypt</a>
+    			<a id="india">India</a>
+				<a id="nepal">Nepal</a>
+				<a id="uruguay">Uruguay</a> 
   			</div>
 
 		</div>
@@ -62,72 +63,72 @@
 
 	<!-- WORK -->
 	<a name="codework"></a>
-	<p class="section-title">Work</p>
+	<p class="section-title">Lightbox</p>
 	
 	<div class="wrapper-three">
 	<div class="work">
 
 	<div class="row">
   		<div class="column">
-    		<img src="images/people.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    		<img data-pic="1" src="images/people.jpg" style="width:100%" class="hover-shadow cursor">
   		</div>
   		<div class="column">
-    		<img src="images/events.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    		<img data-pic="2" src="images/events.jpg" style="width:100%" class="hover-shadow cursor">
   		</div>
   		<div class="column">
-    		<img src="images/outdoor.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    		<img data-pic="3" src="images/outdoor.jpg" style="width:100%" class="hover-shadow cursor">
   		</div>
   		<div class="column">
-    		<img src="images/asia.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    		<img data-pic="4" src="images/asia.jpg" style="width:100%" class="hover-shadow cursor">
   		</div>
    		<div class="column">
-    		<img src="images/north.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    		<img data-pic="5" src="images/north.jpg" style="width:100%" class="hover-shadow cursor">
   		</div>
      	<div class="column">
-    		<img src="images/south.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    		<img data-pic="6" src="images/south.jpg" style="width:100%" class="hover-shadow cursor">
   		</div>
 	</div>
 
 	<div id="myModal" class="modal">
-  		<span class="close cursor" onclick="closeModal()">&times;</span>
-  		<div class="modal-content">
+  		<span id="close cursor" class="close cursor">&times;</span>
+  		<div class="modal-content"></div>
 
-    <div class="mySlides">
-      	<div class="numbertext">1 / 6</div>
-      	<img src="images/people1.jpg" style="width:100%">
-    </div>
+	    <div class="mySlides">
+	      	<div class="numbertext">1 / 6</div>
+	      	<img src="images/people1.jpg" style="width:100%">
+	    </div>
 
-    <div class="mySlides">
-      	<div class="numbertext">2 / 6</div>
-      	<img src="images/events1.jpg" style="width:100%">
-    </div>
+	    <div class="mySlides">
+	      	<div class="numbertext">2 / 6</div>
+	      	<img src="images/events1.jpg" style="width:100%">
+	    </div>
 
-    <div class="mySlides">
-      	<div class="numbertext">3 / 6</div>
-      	<img src="images/outdoor3.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      	<div class="numbertext">4 / 6</div>
-      	<img src="images/asia1.jpg" style="width:100%">
-    </div>
+	    <div class="mySlides">
+	      	<div class="numbertext">3 / 6</div>
+	      	<img src="images/outdoor3.jpg" style="width:100%">
+	    </div>
+	    
+	    <div class="mySlides">
+	      	<div class="numbertext">4 / 6</div>
+	      	<img src="images/asia1.jpg" style="width:100%">
+	    </div>
 
-    <div class="mySlides">
-      	<div class="numbertext">5 / 6</div>
-     	<img src="images/north1.jpg" style="width:100%">
-    </div>
+	    <div class="mySlides">
+	      	<div class="numbertext">5 / 6</div>
+	     	<img src="images/north1.jpg" style="width:100%">
+	    </div>
 
-     <div class="mySlides">
-      	<div class="numbertext">6 / 6</div>
-      	<img src="images/south1.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	     <div class="mySlides">
+	      	<div class="numbertext">6 / 6</div>
+	      	<img src="images/south1.jpg" style="width:100%">
+	    </div>
+	    
+	    <a class="prev">&#10094;</a>
+	    <a class="next">&#10095;</a>
 
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
+	    <div class="caption-container">
+	      <p id="caption"></p>
+	    </div>
 
 	    <div class="column">
 	      <img class="demo cursor" src="images/people1.jpg" style="width:100%" onclick="currentSlide(1)" alt="People">
@@ -226,7 +227,6 @@
 
 
 	<a href="#0" class="cd-top">Top</a>
-	<script type="text/javascript" src="js/main.js"></script>
-
+	
 </body>
 </html>

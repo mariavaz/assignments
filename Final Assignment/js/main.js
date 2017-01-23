@@ -1,5 +1,8 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+$(document).ready(function(){
+
+	$(".dropbtn").click(myFunction);
+
+/* When the user clicks on the button,toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -19,48 +22,33 @@ window.onclick = function(event) {
   }
 }
 
-//WORK SLIDESHOW
+	$("#banner a").click(function() {
+  //get the ID of the dropdown option
+  		var countryID = $(this).attr("id");
+  		console.log(countryID); //-> india
+  //use that ID to set the class
+  	$("#banner").attr("class", countryID);
+  	console.log($("#banner").attr("class"));
+});
 
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
+//WORK SLIDESHOW----------------------------------------------------------
+
+
+//MEDIA MENU----------------------------------------------------------------------
+
+function toggleMenu(){
+		var displayValue = $("nav").css("display");
+		if(displayValue === "none"){
+			$("nav").slideDown();
+		}	else {
+			$("nav").slideUp();
+		}
 }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
+$(".hamburger").click(toggleMenu);
 
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
-$(document).ready(function(){
-
-//BACK TO TOP ARROW
+//BACK TO TOP ARROW----------------------------------------------------------
 	
 	// browser window scroll (in pixels) after which the "back to top" link is shown
 	var offset = 00,
@@ -107,9 +95,7 @@ $top_to_down.on('click', function(event){
 		$('html,body').animate({ scrollTop: 5000 }, 'slow');
 	});
 
-});
-
-//GO DOWN SLOW
+//GO DOWN SLOW----------------------------------------------------------
 
 	function scrollToAnchor(aid){
 	    var aTag = $("a[name='"+ aid +"']");
@@ -127,3 +113,5 @@ $top_to_down.on('click', function(event){
 	$("#contact").click(function() {
 	   scrollToAnchor('codefooter');
 	});
+
+});
